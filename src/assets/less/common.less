@@ -1,0 +1,165 @@
+@import (reference) "util/index";
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    background: @color-body-background;
+}
+
+.bc-container {
+    width: @body-container-width;
+    .mlra;
+    margin-bottom: 24px;
+    .p30;
+    .bgcw;
+    box-sizing: border-box;
+
+    &.clear-pd {
+        padding: 0px;
+    }
+
+    &.clear-bg {
+        background-color: @color-body-background;
+    }
+
+    .bc-row {
+        .p30;
+        box-sizing: border-box;
+
+        &.clear-mt {
+            margin-top: 0px;
+        }
+
+        &.clear-pd {
+            padding: 0px;
+        }
+
+        .bgcw;
+        margin-top: 16px;
+    }
+}
+
+.el-textarea__inner {
+    border: 1px solid @color-border;
+
+    &:focus {
+        border: 1px solid @color-main;
+    }
+}
+
+.el-loading-parent--relative {
+    z-index: 1;
+}
+
+.el-tabs__item {
+    font-size: 18px !important;
+}
+
+.bc-article {
+    *:not([class^='mjx']) {
+        font-size: 18px !important;
+        line-height: 32px !important;
+    }
+
+    p:not([class^='mjx']) {
+        margin-top: 14px !important;
+        margin-bottom: 14px !important;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+}
+
+.paper.isSelfUpload {
+    .report-error {
+        display: none !important;
+    }
+}
+
+#addQuestionQuestionMoreContent .isChoosed {
+    background-color: #ffeaee;
+    color: #f93048;
+}
+
+#addQuestionGroupMoreContent .isChoosed {
+    background-color: #ffeaee;
+    color: red;
+}
+
+.paper .more-content .btn-group {
+    letter-spacing: 0px !important;
+}
+
+.paper {
+    img {
+        vertical-align: middle;
+    }
+
+    .qline .qline-name {
+        line-height: 30px;
+    }
+}
+
+.el-radio .el-radio__label {
+    font-size: 16px !important;
+}
+
+.el-scrollbar__wrap {
+    overflow-x: hidden !important;
+}
+
+.scroll-bar_common {
+    height: 100%;
+}
+
+.el-table th > .cell {
+    color: #222222;
+}
+
+.el-table td > .cell {
+    color: #333333;
+}
+
+.el-table .cell {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    height: 28px;
+    line-height: 28px !important;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+    background-color: #f4fdfa !important;
+}
+
+.el-table th.is-leaf {
+    border-bottom: 0px !important;
+}
+
+// focus-hide-placeholder  类 聚焦时隐藏placeholder
+.focus-hide-placeholder:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.focus-hide-placeholder:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.focus-hide-placeholder:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.focus-hide-placeholder:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.el-dialog__title {
+    display: inline-block;
+    max-width: calc(100% - 100px);
+    .ellipsis();
+}
