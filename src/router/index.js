@@ -20,7 +20,7 @@ const routes = [
       {
         path: 'home',
         name: '首页',
-        component: () => import('views/Home.vue')
+        component: () => import('views/home/index.vue')
       }
     ]
   },
