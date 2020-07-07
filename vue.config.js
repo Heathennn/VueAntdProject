@@ -60,7 +60,7 @@ module.exports = {
   devServer: {
     // open: true,
     // host: '192.168.10.148',
-    host: '192.168.73.206',
+    host: 'localhost',
     port: 8877,
     // http-proxy-middleware官方文档 https://github.com/chimurai/http-proxy-middleware
     // 代理配置
