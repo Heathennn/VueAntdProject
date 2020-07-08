@@ -3,7 +3,7 @@
     <div class="header-top">
       <div class="top-inner">
         <div class="loginOrRegister">
-          <span>登录</span>丨<span>注册</span>
+          <span @click="toLogin">登录</span>丨<span>注册</span>
         </div>
 
         <div class="language">简体中文</div>
@@ -86,6 +86,9 @@
       clickSubMenu({key, domEvent}) {
         let menu = this.menu.find(item => item.key === key);
         this.current = [menu.subMenu.menu[0].key]
+      },
+      toLogin() {
+        this.$router.push({path: '/login', replace: true})
       }
     }
   }

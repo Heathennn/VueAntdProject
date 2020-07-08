@@ -66,6 +66,7 @@
         // 校验表单
         this.$refs.LoginForm.validate( valid => {
           if (valid) {
+            this.$router.push({ path: '/home', replace: true})
             return true
           } else {
             return false
