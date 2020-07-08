@@ -1,7 +1,13 @@
 <template>
   <div class="common-header">
     <div class="header-top">
-      <div class="top-inner"></div>
+      <div class="top-inner">
+        <div class="loginOrRegister">
+          <span>登录</span>丨<span>注册</span>
+        </div>
+
+        <div class="language">简体中文</div>
+      </div>
     </div>
     <div class="header-nav">
       <div :class="['nav-item', nav.key === currentNav[0] ? 'nav-item-active' : '']" v-for="(nav, index) in menu"
@@ -99,6 +105,9 @@
           width: 960px;
           height: 100%;
           margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         }
       }
       .header-nav {
