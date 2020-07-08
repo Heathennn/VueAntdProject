@@ -4,7 +4,7 @@
     <News></News>
     <C2C></C2C>
     <News2></News2>
-    <!-- <School></School>  -->
+     <School></School>
   </div>
 </template>
 

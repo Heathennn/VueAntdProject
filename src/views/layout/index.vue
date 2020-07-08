@@ -2,10 +2,12 @@
   <div class="page_container">
     <CommonHeader></CommonHeader>
     <router-view></router-view>
+    <CommonFooter></CommonFooter>
   </div>
 </template>
 <script>
   import CommonHeader from './components/CommonHeader'
+  import CommonFooter from './components/CommonFooter'
 export default {
   data() {
     return {
@@ -13,7 +15,8 @@ export default {
     };
   },
   components: {
-    CommonHeader
+    CommonHeader,
+    CommonFooter
   }
 };
 </script>

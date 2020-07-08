@@ -25,15 +25,29 @@ const routes = [
     ]
   },
   {
-    path: '/user',
-    name: 'user',
+    path: '/c2c',
+    name: 'c2c',
     component: Layout,
+    redirect: 'index',
     children: [
-      // {
-      //   path: 'list',
-      //   name: '列表',
-      //   component:  () => import('')
-      // }
+      {
+        path: 'index',
+        name: 'c2c首页',
+        component:  () => import('views/C2C/index')
+      }
+    ]
+  },
+  {
+    path: '/investment',
+    name: '投资促进',
+    component: Layout,
+    redirect: 'index',
+    children: [
+      {
+        path: 'index',
+        name: '投资促进你',
+        component:  () => import('views/investment/index')
+      }
     ]
   }
 ]

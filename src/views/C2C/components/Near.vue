@@ -1,14 +1,15 @@
 <template>
-  <div class="swiper-container">
-    <swiper :options="swiperOption" class="swiper-wrapper">
-      <swiper-slide class="scroll-content" :style="{ backgroundColor: '#f1f1f1'}">
-        新闻1
+  <div class="c2c-swiper-container">
+    <div class="header">周边环境</div>
+    <swiper :options="swiperOption" class="c2c-swiper-wrapper">
+      <swiper-slide class="c2c-scroll-content" :style="{ backgroundColor: '#f1f1f1'}">
+        周边1
       </swiper-slide>
-      <swiper-slide class="scroll-content" :style="{backgroundColor: '#f3f3f3'}">
-        新闻2
+      <swiper-slide class="c2c-scroll-content" :style="{backgroundColor: '#f3f3f3'}">
+        周边2
       </swiper-slide>
-      <swiper-slide class="scroll-content" :style="{backgroundColor: '#BABABA'}">
-        新闻3
+      <swiper-slide class="c2c-scroll-content" :style="{backgroundColor: '#BABABA'}">
+        周边2
       </swiper-slide>
       <!-- 分页指示器，如果需要的话 -->
 <!--      <div class="swiper-scrollbar" slot="pagination"></div>-->
@@ -50,22 +51,28 @@
 </script>
 
 <style lang="less">
-  .swiper-container {
+  .c2c-swiper-container {
     width: 600px;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     overflow: hidden;
     box-sizing: border-box;
     /*border: 1px solid black;*/
     padding: 20px 0;
-    .swiper-wrapper {
+    .header {
+      height: 80px;
+      line-height: 80px;
+      margin-top: 50px;
+      text-align: center;
+    }
+    .c2c-swiper-wrapper {
       width: 100%;
       height: 100%;
       margin: 0 auto;
       display: flex;
       justify-content: center;
     }
-    .scroll-content {
+    .c2c-scroll-content {
       color: #000000;
       width: 230px!important;
       height: 160px!important;

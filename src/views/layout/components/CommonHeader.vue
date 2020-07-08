@@ -24,6 +24,7 @@
         menu: [
           {
             name: '首页',
+            path: '/home',
             key: 'home'
           },
           {
@@ -58,17 +59,21 @@
           },
           {
             name: '投资提携',
-            key: 'money'
+            key: 'money',
+            path: '/investment/index'
           },
           {
             name: 'C2C Group',
-            key: 'C2C'
+            key: 'C2C',
+            path: '/c2c/index'
           },
         ]
       }
     },
     methods: {
       clickNav(nav) {
+        console.log("nav", nav)
+        this.$router.push({ path: nav.path, replace: true})
         this.currentNav = [nav.key, nav.subMenu ? nav.subMenu.menu[0].key : null]
       },
       // 点击具有下拉菜单的导航时事件

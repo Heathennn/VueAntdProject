@@ -7,7 +7,6 @@ import 'assets/less/reset.less'
 import './antdComponents'
 // import 'ant-design-vue/dist/antd.css';
 // import './rule'
-// Vue.use(Antd);
 Vue.config.productionTip = false
 
 new Vue({
