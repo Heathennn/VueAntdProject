@@ -49,6 +49,32 @@ const routes = [
         component:  () => import('views/investment/index')
       }
     ]
+  },
+  {
+    path: '/child',
+    name: '幼儿教育',
+    component: Layout,
+    redirect: 'index',
+    children: [
+      {
+        path: 'index',
+        name: '幼儿教育',
+        component:  () => import('views/childEducate/index')
+      }
+    ]
+  },
+  {
+    path: '/japan',
+    name: '日本留学',
+    component: Layout,
+    redirect: 'index',
+    children: [
+      {
+        path: 'index',
+        name: '日本留学',
+        component:  () => import('views/japan/index')
+      }
+    ]
   }
 ]
 

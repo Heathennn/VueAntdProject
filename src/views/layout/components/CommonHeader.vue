@@ -36,6 +36,7 @@
           {
             name: '日本留学',
             key: 'Japan',
+            path: '/japan/index',
             subMenu: {
               title: '',
               icon: '',
@@ -61,7 +62,8 @@
           },
           {
             name: '幼儿教育',
-            key: 'child'
+            key: 'child',
+            path: '/child/index'
           },
           {
             name: '投资提携',
@@ -78,7 +80,6 @@
     },
     methods: {
       clickNav(nav) {
-        console.log("nav", nav)
         this.$router.push({ path: nav.path, replace: true})
         this.currentNav = [nav.key, nav.subMenu ? nav.subMenu.menu[0].key : null]
       },

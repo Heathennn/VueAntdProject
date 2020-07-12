@@ -1,6 +1,7 @@
 <template>
   <div class="home-page-container">
     <Banner></Banner>
+    <Recommend></Recommend>
     <News></News>
     <C2C></C2C>
     <News2></News2>
@@ -14,6 +15,7 @@
   import C2C from './components/C2C' // C2C
   import News2 from './components/News2' //投资
   import School from './components/School'
+  import Recommend  from "views/home/components/Recommend"
   export default {
     name: "Home",
     components: {
@@ -21,7 +23,8 @@
       News,
       C2C,
       News2,
-      School
+      School,
+      Recommend
     }
   }
 </script>
